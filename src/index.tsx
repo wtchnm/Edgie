@@ -12,7 +12,7 @@ if (!root) {
 render(
 	() => (
 		<Router>
-			<Route path='/' component={Home} />
+			<Route component={Home} path='/' />
 		</Router>
 	),
 	root
