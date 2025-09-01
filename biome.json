@@ -53,8 +53,6 @@
 					},
 					"nursery": {
 						"useExplicitType": "off",
-						"noMagicNumbers": "off",
-						"useExportsLast": "off",
 						"noUnresolvedImports": "off",
 						"noSecrets": {
 							"level": "error",
@@ -71,6 +69,8 @@
 						"noImgElement": "off"
 					},
 					"style": {
+						"noMagicNumbers": "off",
+						"useExportsLast": "off",
 						"useBlockStatements": "off",
 						"useNamingConvention": {
 							"level": "error",
