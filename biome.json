@@ -54,16 +54,17 @@
 					"nursery": {
 						"useExplicitType": "off",
 						"noUnresolvedImports": "off",
-						"noSecrets": {
-							"level": "error",
-							"options": {
-								"entropyThreshold": 100
-							}
-						},
 						"useSortedClasses": {
 							"level": "error",
 							"fix": "safe"
-						}
+						},
+						"noUnknownAttribute": {
+							"level": "error",
+							"options": {
+								"ignore": ["class"]
+							}
+						},
+						"noJsxLiterals": "off"
 					},
 					"performance": {
 						"noImgElement": "off"
@@ -85,6 +86,14 @@
 								"strictCase": false,
 								"requireAscii": true,
 								"filenameCases": ["camelCase", "kebab-case", "PascalCase"]
+							}
+						}
+					},
+					"security": {
+						"noSecrets": {
+							"level": "error",
+							"options": {
+								"entropyThreshold": 100
 							}
 						}
 					}
