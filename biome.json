@@ -11,6 +11,11 @@
 		},
 		"enabled": true
 	},
+	"css": {
+		"parser": {
+			"tailwindDirectives": true
+		}
+	},
 	"formatter": {
 		"enabled": true,
 		"indentStyle": "tab"
@@ -49,7 +54,8 @@
 			"linter": {
 				"rules": {
 					"correctness": {
-						"useImportExtensions": "off"
+						"useImportExtensions": "off",
+						"useUniqueElementIds": "off"
 					},
 					"nursery": {
 						"useExplicitType": "off",
@@ -58,13 +64,9 @@
 							"level": "error",
 							"fix": "safe"
 						},
-						"noUnknownAttribute": {
-							"level": "error",
-							"options": {
-								"ignore": ["class"]
-							}
-						},
-						"noJsxLiterals": "off"
+						"noUnknownAttribute": "off",
+						"noJsxLiterals": "off",
+						"useQwikValidLexicalScope": "off"
 					},
 					"performance": {
 						"noImgElement": "off"
@@ -86,6 +88,14 @@
 								"strictCase": false,
 								"requireAscii": true,
 								"filenameCases": ["camelCase", "kebab-case", "PascalCase"]
+							}
+						}
+					},
+					"complexity": {
+						"noExcessiveLinesPerFunction": {
+							"level": "error",
+							"options": {
+								"maxLines": 100
 							}
 						}
 					},
