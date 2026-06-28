@@ -2,23 +2,20 @@
 
 Modern starter template using:
 
+- Vite+
 - Solid and Solid Router
 - TailwindCSS
-- Vite
-- Biome
-- Bun
 - Typescript
-- Zed
 
 ## Installation
 
-Clone the repository and install the dependencies: `bun i`.
+Clone the repository and install the dependencies: `vp install`.
 
 ## Commands
 
 ```bash
-bun dev       # dev server
-bun build     # build for production
-bun preview   # preview production build
-bun validate  # run tsc and biome to lint and format
+vp dev       # dev server
+vp check     # run tsc, oxlint and oxfmt
+vp build     # build for production
+vp preview   # preview production build
 ```
