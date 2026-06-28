@@ -1,34 +1,35 @@
 {
-  "name": "edgie",
-  "version": "0.0.0",
-  "private": true,
-  "license": "MIT",
-  "type": "module",
-  "scripts": {
-    "dev": "vp dev",
-    "build": "vp build",
-    "lint": "vp lint",
-    "preview": "vp preview",
-    "prepare": "vp config"
-  },
-  "dependencies": {
-    "@solidjs/router": "0.16.1",
-    "solid-js": "1.9.12"
-  },
-  "devDependencies": {
-    "@tailwindcss/vite": "4.2.4",
-    "@types/node": "^24.13.2",
-    "tailwindcss": "4.2.4",
-    "typescript": "6.0.3",
-    "vite": "catalog:",
-    "vite-plugin-solid": "2.11.12",
-    "vite-plus": "catalog:"
-  },
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "11.9.0",
-      "onFail": "download"
-    }
-  }
+	"name": "edgie",
+	"version": "0.0.0",
+	"private": true,
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"dev": "vp dev",
+		"build": "vp build",
+		"check": "vp check",
+		"preview": "vp preview",
+		"prepare": "vp config"
+	},
+	"dependencies": {
+		"@solidjs/router": "0.16.1",
+		"solid-js": "1.9.12"
+	},
+	"devDependencies": {
+		"@tailwindcss/vite": "4.2.4",
+		"@types/node": "26.0.1",
+		"eslint-plugin-solid": "0.14.5",
+		"tailwindcss": "4.2.4",
+		"typescript": "6.0.3",
+		"vite": "catalog:",
+		"vite-plugin-solid": "2.11.12",
+		"vite-plus": "catalog:"
+	},
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "11.9.0",
+			"onFail": "download"
+		}
+	}
 }
